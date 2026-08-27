@@ -1,4 +1,4 @@
-name: 03-working-with-runners
+name: 04-working-with-runners-windows&linux
 on: push
 jobs:
   runners-info-job:
