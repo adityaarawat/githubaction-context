@@ -1,0 +1,12 @@
+name: 03-working-with-runners
+on: push
+jobs:
+  runners-info-job:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Print Runner Details
+       run: |
+         echo "workflow is executing on a Github-hosted Runner..."
+         echo "Runner name : $RUNNER_NAME"
+         echo "Runner OS: $RUNNER_OS"
+         echo "Runner Architecture: $RUNNER_ARCH"
